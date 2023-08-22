@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Table Styles */
+.container {
+  max-width: 100%;
+  margin: 10px 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 16px;
+}
+
+.table-container {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 500px;
+  max-height: 850px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header .col {
+  font-size: 12px;
+  color: #171414;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  padding: 8px;
+  white-space: nowrap; /* Prevent header text from wrapping */
+  overflow: hidden; /* Hide overflowing header text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing header text */
+}
+
+.table-row .col {
+  font-size: 12px;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  white-space: nowrap; /* Prevent row text from wrapping */
+  overflow: hidden; /* Hide overflowing row text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing row text */
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.previous,
+.next {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #c4c5c5;
+  color: #060606;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d8d8d8;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+
+</style>
+
+
+    <title>Table</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table-container">
+          <table class="responsive-table">
+            <tr class="table-header">
+              <th class="col" data-label="Id">Id</th>
+              <th class="col" data-label="First Name">First Name</th>
+              <th class="col" data-label="Last Name">Last Name</th>
+              <th class="col" data-label="Amount">Amount</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+            </tr>
+            <tr class="table-row">
+              <td class="col" data-label="Id">1454654345</td>
+              <td class="col" data-label="First Name">OmnathDubey</td>
+              <td class="col" data-label="Last Name">Omnath Dubey</td>
+              <td class="col" data-label="Amount">Rs 350</td>
+              <td class="col" data-label="Status Number">Pending</td>
+              <td class="col" data-label="Id">1454654345</td>
+              <td class="col" data-label="First Name">OmnathDubey</td>
+              <td class="col" data-label="Last Name">Omnath Dubey</td>
+              <td class="col" data-label="Amount">Rs 350</td>
+              <td class="col" data-label="Status Number">Pending</td>
+              <td class="col" data-label="Status Number">Pending</td>
+            </tr>
+            <!-- Add more rows here -->
+          </table>
+        </div>
+        <div class="table-container">
+          <table class="responsive-table">
+            <tr class="table-header">
+              <th class="col" data-label="Id">Id</th>
+              <th class="col" data-label="First Name">First Name</th>
+              <th class="col" data-label="Last Name">Last Name</th>
+              <th class="col" data-label="Amount">Amount</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+              <th class="col" data-label="Status Number">Status Number</th>
+            </tr>
+            <tr class="table-row">
+              <td class="col" data-label="Id">1454654345</td>
+              <td class="col" data-label="First Name">OmnathDubey</td>
+              <td class="col" data-label="Last Name">Omnath Dubey</td>
+              <td class="col" data-label="Amount">Rs 350</td>
+              <td class="col" data-label="Status Number">Pending</td>
+              <td class="col" data-label="Id">1454654345</td>
+              <td class="col" data-label="First Name">OmnathDubey</td>
+              <td class="col" data-label="Last Name">Omnath Dubey</td>
+              <td class="col" data-label="Amount">Rs 350</td>
+              <td class="col" data-label="Status Number">Pending</td>
+              <td class="col" data-label="Status Number">Pending</td>
+              <td class="col" data-label="Status Number">Pending</td>
+
+            </tr>
+            <!-- Add more rows here -->
+          </table>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a>
+    </div>
+</body>
+</html>
